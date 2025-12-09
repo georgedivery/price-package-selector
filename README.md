@@ -1,41 +1,47 @@
-# PHP vendors
-/vendor/
-composer.lock
+Price Package Selector for WooCommerce
 
-# Environment files
-.env
-.env.*.local
+Price Package Selector is a lightweight WooCommerce plugin that replaces the default quantity input with a set of customizable package options. It allows store owners to offer quantity-based discounts directly on the single product page — making upsells easier and increasing average order value.
 
-# Logs
-*.log
+✨ Key Features
 
-# Cache
-cache/
-tmp/
-*.cache
+Replace the standard quantity selector with package cards (1, 2, 3+ products, etc.)
 
-# IDE & editors
-.idea/
-.vscode/
-*.swp
+Custom text and pricing for each package
 
-# OS files (macOS)
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon?
-._*
+Prices automatically update in the cart based on the selected package
 
-# Thumbnails
-._.DS_Store
-Thumbs.db
+Works seamlessly with WooCommerce themes
 
-# Node (ако се използва front-end tooling)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+Lightweight and optimized for performance
 
-# Build
-dist/
-build/
+Easy setup — no coding required
+
+📌 Use Cases
+
+Bundle pricing (Buy 2, Save 10% — Buy 3, Save 20%)
+
+Limited-time offers and promotions
+
+Subscription and consumable products (coffee, supplements, cosmetics)
+
+🚀 Installation
+
+Upload the plugin files to the /wp-content/plugins/ directory
+
+Activate the plugin through the Plugins menu in WordPress
+
+Configure package options in the WooCommerce product edit screen
+
+🔧 Compatibility
+
+WordPress 6+
+
+WooCommerce 8+
+
+PHP 7.4+
+
+📷 Screenshot
+
+Replace this placeholder with your actual screenshot
+
+/screenshot.png
