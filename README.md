@@ -40,8 +40,7 @@ WooCommerce 8+
 
 PHP 7.4+
 
-📷 Screenshot
+📷 Screenshot 
 
-Replace this placeholder with your actual screenshot
+![Plugin Screenshot](screenshot.png)
 
-/screenshot.png
