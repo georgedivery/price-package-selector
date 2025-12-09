@@ -3,7 +3,7 @@
  * Plugin Name: Price Package Selector
  * Plugin URI: https://webbeb.com
  * Description: Replaces WooCommerce quantity & add to cart button with custom package selector.
- * Version: 1.1
+ * Version: 1.2
  * Author: Webbeb
  * Author URI: https://webbeb.com
  * License: GPL2
@@ -11,7 +11,7 @@
 
  if (!defined('ABSPATH')) exit;
 
- // Скриваме quantity input
+ // Hide quantity input
 // Enqueue styles & JS
 add_action( 'wp_enqueue_scripts', function() {
     if ( is_product() ) {
@@ -26,7 +26,7 @@ add_action( 'wp_enqueue_scripts', function() {
     }
 });
  
- // Рендираме радио бутоните и връзка към quantity
+ 
  add_action('woocommerce_before_add_to_cart_button', function () {
     global $product;
     if ($product->is_type('variable')) {
@@ -93,7 +93,7 @@ add_action( 'wp_enqueue_scripts', function() {
      <?php
  }, 5);
  
- // Променяме цената според quantity
+ //   change the price based on the quantity
  add_action('woocommerce_before_calculate_totals', function ($cart) {
      if (is_admin() && !defined('DOING_AJAX')) return;
  
@@ -102,7 +102,7 @@ add_action( 'wp_enqueue_scripts', function() {
          $base_price = floatval($product->get_regular_price());
          $qty = $cart_item['quantity'];
  
-         // Изчисляваме отстъпка
+         // calculate a discount
          $discount = 0;
          if ($qty == 2) $discount = 0.10;
           elseif ($qty >= 3) {
